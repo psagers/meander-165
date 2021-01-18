@@ -1,0 +1,8 @@
+{:linters
+ {:unresolved-symbol
+  {:exclude [(meander.epsilon/find)
+             (meander.epsilon/match)
+             (meander.epsilon/search)]}}
+
+ :lint-as {com.fulcrologic.guardrails.core/>defn clojure.core/defn
+           com.fulcrologic.guardrails.core/>defn- clojure.core/defn-}}

@@ -1,0 +1,14 @@
+{:deps
+ {org.clojure/clojure {:mvn/version "1.10.1"}
+  thheller/shadow-cljs {:mvn/version "2.11.13"}
+
+  com.fulcrologic/guardrails {:mvn/version "1.1.2"}
+  meander/epsilon {:mvn/version "0.0.588"}}
+
+ :paths
+ ["src"]
+
+ :aliases
+ {:guardrails {:jvm-opts ["-Dguardrails.enabled"]}
+
+  :shadow {:main-opts ["-m" "shadow.cljs.devtools.cli"]}}}
